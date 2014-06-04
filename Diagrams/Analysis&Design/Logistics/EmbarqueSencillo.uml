@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_TGREAOqLEeOBr5fneMswgA">
+  <elementImport xmi:id="_TG2S0OqLEeOBr5fneMswgA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_TG5WIOqLEeOBr5fneMswgA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_TG59MOqLEeOBr5fneMswgA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_TG59MeqLEeOBr5fneMswgA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_VPxHIOqLEeOBr5fneMswgA" name="Embarque Sencillo">
+    <region xmi:id="_VSaLcOqLEeOBr5fneMswgA" name="Region">
+      <subvertex xmi:type="uml:State" xmi:id="_aEI1EOqLEeOBr5fneMswgA" name="Documentación Pendiente"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_cy0B0OqLEeOBr5fneMswgA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Q5FqsOqfEeOe0LGLCewZTQ" name="Documentación Completa"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ezH8oOqfEeOe0LGLCewZTQ" name="Logística Pendiente"/>
+      <subvertex xmi:type="uml:State" xmi:id="_3EvGYOqfEeOe0LGLCewZTQ" name="Logística Completa"/>
+      <subvertex xmi:type="uml:State" xmi:id="_EWHc4OqgEeOe0LGLCewZTQ" name="Configurando Logística">
+        <region xmi:id="_EWhskOqgEeOe0LGLCewZTQ" name="Region">
+          <subvertex xmi:type="uml:State" xmi:id="_7NDxMOqgEeOe0LGLCewZTQ" name="Logistica Viaje Completada"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-6sgkOqgEeOe0LGLCewZTQ" name="Logistica Descarga Completada"/>
+          <subvertex xmi:type="uml:State" xmi:id="_WP1QcOqgEeOe0LGLCewZTQ" name="Logistica Carga Completada"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_yHv9EOqhEeOe0LGLCewZTQ"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_4tPqYOqhEeOe0LGLCewZTQ"/>
+          <subvertex xmi:type="uml:State" xmi:id="_1MENMOqiEeOe0LGLCewZTQ" name="Logistica Regreso Completada"/>
+          <subvertex xmi:type="uml:State" xmi:id="_OxmLAOqlEeOe0LGLCewZTQ" name="Logistica Activo Completada"/>
+          <transition xmi:id="_56e5kOqhEeOe0LGLCewZTQ" source="_yHv9EOqhEeOe0LGLCewZTQ" target="_WP1QcOqgEeOe0LGLCewZTQ"/>
+          <transition xmi:id="_CN1P0OqiEeOe0LGLCewZTQ" source="_WP1QcOqgEeOe0LGLCewZTQ" target="_7NDxMOqgEeOe0LGLCewZTQ"/>
+          <transition xmi:id="_CyElUOqiEeOe0LGLCewZTQ" source="_7NDxMOqgEeOe0LGLCewZTQ" target="_-6sgkOqgEeOe0LGLCewZTQ"/>
+          <transition xmi:id="_DWW-IOqiEeOe0LGLCewZTQ" source="_OxmLAOqlEeOe0LGLCewZTQ" target="_4tPqYOqhEeOe0LGLCewZTQ"/>
+          <transition xmi:id="_8DpJAOqiEeOe0LGLCewZTQ" source="_-6sgkOqgEeOe0LGLCewZTQ" target="_1MENMOqiEeOe0LGLCewZTQ"/>
+          <transition xmi:id="_TCW1kOqlEeOe0LGLCewZTQ" source="_1MENMOqiEeOe0LGLCewZTQ" target="_OxmLAOqlEeOe0LGLCewZTQ"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_ViRQwOqpEeOe0LGLCewZTQ"/>
+      <transition xmi:id="_wCtlMOqLEeOBr5fneMswgA" source="_cy0B0OqLEeOBr5fneMswgA" target="_aEI1EOqLEeOBr5fneMswgA"/>
+      <transition xmi:id="_VRRL4OqfEeOe0LGLCewZTQ" source="_aEI1EOqLEeOBr5fneMswgA" target="_Q5FqsOqfEeOe0LGLCewZTQ"/>
+      <transition xmi:id="_kI3SQOqfEeOe0LGLCewZTQ" source="_Q5FqsOqfEeOe0LGLCewZTQ" target="_ezH8oOqfEeOe0LGLCewZTQ"/>
+      <transition xmi:id="_39ogcOqjEeOe0LGLCewZTQ" source="_ezH8oOqfEeOe0LGLCewZTQ" target="_EWHc4OqgEeOe0LGLCewZTQ"/>
+      <transition xmi:id="_BRM9kOqkEeOe0LGLCewZTQ" source="_EWHc4OqgEeOe0LGLCewZTQ" target="_3EvGYOqfEeOe0LGLCewZTQ"/>
+      <transition xmi:id="_XCRD4OqpEeOe0LGLCewZTQ" source="_3EvGYOqfEeOe0LGLCewZTQ" target="_ViRQwOqpEeOe0LGLCewZTQ"/>
+    </region>
+  </packagedElement>
+</uml:Package>

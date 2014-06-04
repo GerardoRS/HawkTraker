@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_1nRaIOqwEeOe0LGLCewZTQ">
+  <elementImport xmi:id="_1n1a0OqwEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_1n1a0eqwEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_1n1a0uqwEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_1n1a0-qwEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_30nbcOqwEeOe0LGLCewZTQ" name="Embarque Semidedicado">
+    <node xmi:type="uml:InitialNode" xmi:id="_5luMsOqwEeOe0LGLCewZTQ" outgoing="_IC8l0OtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_6EhBgOqwEeOe0LGLCewZTQ" name="Upload de Carta de Instrucción" outgoing="_IjJv4OtiEeOe0LGLCewZTQ" incoming="_IC8l0OtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_HJmBYOqxEeOe0LGLCewZTQ" name="Configurar Logistica" outgoing="_JLKyIOtiEeOe0LGLCewZTQ" incoming="_IjJv4OtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_IyAwsOqxEeOe0LGLCewZTQ" name="El Sistema muestra Unidades Semidedicadas Disponibles o Semiocupadas Compatibles con el tipo de Carga" outgoing="_JukaIOtiEeOe0LGLCewZTQ" incoming="_WaWtEOteEeOe0LGLCewZTQ _JLKyIOtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_7_fD8OqxEeOe0LGLCewZTQ" name="El usuario selecciona alguna(s) opción(es) y visualiza la Ruta, Puntos de Carga, Puntos de Entrega, sus Tiempos y Espacio Disponible" outgoing="_KPwboOtiEeOe0LGLCewZTQ" incoming="_JukaIOtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UEii8OqzEeOe0LGLCewZTQ" name="El usuario Selecciona una opción de Viaje o Unidad Vacia" outgoing="_KumTwOtiEeOe0LGLCewZTQ" incoming="_KPwboOtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_eH4QIOqzEeOe0LGLCewZTQ" name="El sistema muestra la secuencia de Viajes de Carga, Tiempos en el Punto de Carga, Viajes de Entrega, Tiempos en el Punto de Entrega, Viaje de Regreso, iniciando por el Viaje de Salida Inicial de la Ruta Completa del Semidedicado" outgoing="_LJccsOtiEeOe0LGLCewZTQ" incoming="_KumTwOtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_kfMXgOqzEeOe0LGLCewZTQ" name="El usuario inserta un nuevo Punto de Carga entre dos Segmentos de la Ruta Semidedicada Actual" outgoing="_G7tUIOtmEeOe0LGLCewZTQ" incoming="_InCR4OuEEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:ValueSpecificationAction" xmi:id="_vwmyoOq5EeOe0LGLCewZTQ" name="Nuevo Viaje Inicial de Salida"/>
+    <node xmi:type="uml:ValueSpecificationAction" xmi:id="_yh_VIOq5EeOe0LGLCewZTQ" name="Despues de un Punto de Carga"/>
+    <node xmi:type="uml:ValueSpecificationAction" xmi:id="_4be4EOq5EeOe0LGLCewZTQ" name="Despues de un Punto de Entrega"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_FqQ6MOtBEeOe0LGLCewZTQ" name="Configurar Ruta en Mapa entre Punto Previo y Punto de Carga" outgoing="_TagCAOtkEeOe0LGLCewZTQ" incoming="_jOme0OtiEeOe0LGLCewZTQ" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Jt_1YOtBEeOe0LGLCewZTQ" name="Usuario indica puntos de Riesgo en la Ruta u otros tipos de puntos Especiales" outgoing="_VZBkMOtkEeOe0LGLCewZTQ" incoming="_UrskIOtkEeOe0LGLCewZTQ" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MhLusOtBEeOe0LGLCewZTQ" name="Usuario Configura Fecha y Hora de Salida a Punto de Carga" outgoing="_YqHV8OtuEeOTMrYfC6bNtA" incoming="_VZBkMOtkEeOe0LGLCewZTQ _y7RG0Ot0EeOTMrYfC6bNtA" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_WG3PgOtBEeOe0LGLCewZTQ" name="Calcula o Configura Tiempo de Duración del Viaje" outgoing="_-HJisOtvEeOTMrYfC6bNtA" incoming="_YqHV8OtuEeOTMrYfC6bNtA" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_AgpfkOtCEeOe0LGLCewZTQ" name="El Sistema Calcula si la Carga de este Embarque puede Agregarse a la Unidad de Traslado en ese momento del Viaje" outgoing="_X02wcOtDEeOe0LGLCewZTQ" incoming="_Y35acOtGEeOe0LGLCewZTQ _G7tUIOtmEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BtUHAOtCEeOe0LGLCewZTQ" name="El Sistema solicita Confirmación de que Carga se asignara a esta Unidad en este Momento de la Ruta" outgoing="_X0Yr0OtCEeOe0LGLCewZTQ" incoming="_aP4BYOtDEeOe0LGLCewZTQ _oCXg4OtDEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_Rtnh4OtCEeOe0LGLCewZTQ" name="Usuario Valida Carga?" outgoing="_JdzV4OtEEeOe0LGLCewZTQ _IxBdgOtGEeOe0LGLCewZTQ" incoming="_X0Yr0OtCEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_q9C-wOtCEeOe0LGLCewZTQ" name="Mover Viaje de Carga de la posición actual?" outgoing="_XHWp4OtGEeOe0LGLCewZTQ" incoming="_FgTToOtGEeOe0LGLCewZTQ _IxBdgOtGEeOe0LGLCewZTQ _T5tqYOtgEeOe0LGLCewZTQ _rkBXAOt1EeOTMrYfC6bNtA" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_EHz-EOtDEeOe0LGLCewZTQ" name="MergeNode" outgoing="_Y_rk0OtDEeOe0LGLCewZTQ _aP4BYOtDEeOe0LGLCewZTQ" incoming="_X02wcOtDEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_IH7kkOtDEeOe0LGLCewZTQ" name="Sistema Indica Sobrecarga" outgoing="_oCXg4OtDEeOe0LGLCewZTQ _-1prcOtDEeOe0LGLCewZTQ" incoming="_Y_rk0OtDEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_18LwYOtDEeOe0LGLCewZTQ" name="Sistema solicita Confirmación de que la Carga se llevara aún con la Sobrecarga de la Unidad" outgoing="_l5y1YOtEEeOe0LGLCewZTQ" incoming="_-1prcOtDEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_k8pQoOtEEeOe0LGLCewZTQ" name="MergeNode" outgoing="_ubAMAOtFEeOe0LGLCewZTQ _FgTToOtGEeOe0LGLCewZTQ" incoming="_l5y1YOtEEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_WA7NUOtGEeOe0LGLCewZTQ" name="MergeNode" outgoing="_Y35acOtGEeOe0LGLCewZTQ _khsIEOtGEeOe0LGLCewZTQ" incoming="_XHWp4OtGEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fWICIOtGEeOe0LGLCewZTQ" name="Remover Nuevo Viaje de Carga" outgoing="_WaWtEOteEeOe0LGLCewZTQ" incoming="_khsIEOtGEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_F_-nUOtIEeOe0LGLCewZTQ" name="El Sistema Agrega la Carga por Peso y/o Volumen a la Unidad de Traslado" outgoing="_jOme0OtiEeOe0LGLCewZTQ" incoming="_Bn-i8OthEeOe0LGLCewZTQ _vClfsOthEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dh9q8OtIEeOe0LGLCewZTQ" name="Sistema Valida las posteriores Cargas y Descargas de la Ruta Indicando Sobrecargas" outgoing="_SnplkOtgEeOe0LGLCewZTQ" incoming="_JdzV4OtEEeOe0LGLCewZTQ _ubAMAOtFEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_PvMxwOtgEeOe0LGLCewZTQ" name="MergeNode" outgoing="_T5tqYOtgEeOe0LGLCewZTQ _msGV4OthEeOe0LGLCewZTQ" incoming="_Gzry0OthEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_sXKQsOtgEeOe0LGLCewZTQ" name="MergeNode" outgoing="_Bn-i8OthEeOe0LGLCewZTQ _Gzry0OthEeOe0LGLCewZTQ" incoming="_SnplkOtgEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_eArd4OthEeOe0LGLCewZTQ" name="Sistema Deja Confirmaciónes de Sobrecarga Pendientes en los Segmentos de la Ruta Correspondientes" outgoing="_vClfsOthEeOe0LGLCewZTQ" incoming="_msGV4OthEeOe0LGLCewZTQ" inPartition="_6rqCIOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_7NgkcOthEeOe0LGLCewZTQ" name="Sistema Agrega al Mapa de la Ruta Semidedicada los Puntos de Carga y Entrega del Viaje que se esta Configurando" outgoing="_InCR4OuEEeOTMrYfC6bNtA" incoming="_DJ72MOtnEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_wRAlMOtiEeOe0LGLCewZTQ" name="Sistema Coloca Punto Anterior de la Ruta en el Mapa:    (Punto de Partida Incial,  Punto Anterior de Carga, Punto Anterior de Entrega)" outgoing="_IirmEOtzEeOTMrYfC6bNtA" incoming="_TagCAOtkEeOe0LGLCewZTQ" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_v6efEOtjEeOe0LGLCewZTQ" name="Usuario Configura Ruta desde Punto Anterior hacia Punto de Carga" outgoing="_UrskIOtkEeOe0LGLCewZTQ" incoming="_J2IyAOtzEeOTMrYfC6bNtA" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_8tzgQOtmEeOe0LGLCewZTQ" name="Agregar Embarque Semidedicado" outgoing="_DJ72MOtnEeOe0LGLCewZTQ" incoming="_LJccsOtiEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_5PDAwOtuEeOTMrYfC6bNtA" name="Sistema Muestra Toda la Información Relevante" incoming="_CNDZYOt2EeOTMrYfC6bNtA" inPartition="_fzDZQOtHEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Ay_TUOtvEeOTMrYfC6bNtA" name="Reconfigurar Tiempos de la Ruta Semidedicada" outgoing="_MjvIEOtwEeOTMrYfC6bNtA" incoming="_IxZe4OtwEeOTMrYfC6bNtA _L5nH0OuCEeOTMrYfC6bNtA _gtHWgOuDEeOTMrYfC6bNtA" inPartition="_fzDZQOtHEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_DEv6kOtvEeOTMrYfC6bNtA" name="Los Tiempos de los Puntos Previos se Recorren según sea necesario para Ajustarse a la Fecha-Hora de Inicio del Viaje de Carga" outgoing="_sRUz0OtzEeOTMrYfC6bNtA" incoming="_MjvIEOtwEeOTMrYfC6bNtA" inPartition="_fzDZQOtHEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_EYXekOtvEeOTMrYfC6bNtA" name="Los Tiempos de los Puntos Posteriores se Recorren según sea necesario para Ajustarse a la Fecha-Hora de Fin de Carga" outgoing="_9i5XYOt1EeOTMrYfC6bNtA" incoming="_BBvSQOt1EeOTMrYfC6bNtA" inPartition="_fzDZQOtHEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_1fYboOtvEeOTMrYfC6bNtA" name="Usuario Configura Tiempo de Carga" outgoing="_6OHy8OuAEeOTMrYfC6bNtA" incoming="_-HJisOtvEeOTMrYfC6bNtA" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_-XTXMOtyEeOTMrYfC6bNtA" name="Sistema Coloca Punto de Carga en el Mapa" outgoing="_J2IyAOtzEeOTMrYfC6bNtA" incoming="_IirmEOtzEeOTMrYfC6bNtA" inPartition="_BID6UOtBEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_rYHT4OtzEeOTMrYfC6bNtA" name="MergeNode" outgoing="_y7RG0Ot0EeOTMrYfC6bNtA _BBvSQOt1EeOTMrYfC6bNtA" incoming="_sRUz0OtzEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qnM-4Ot0EeOTMrYfC6bNtA" name="Confirmar Cambios" outgoing="_lSAmYOt1EeOTMrYfC6bNtA" incoming="_9i5XYOt1EeOTMrYfC6bNtA" inPartition="_fzDZQOtHEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_jkIvUOt1EeOTMrYfC6bNtA" name="MergeNode" outgoing="_rkBXAOt1EeOTMrYfC6bNtA _CNDZYOt2EeOTMrYfC6bNtA" incoming="_lSAmYOt1EeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_g1JuoOt3EeOTMrYfC6bNtA" name="El usuario inserta un nuevo Punto de Carga entre dos Segmentos de la Ruta Semidedicada Actual" inPartition="_wi8-4OtkEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_ziS0IOuAEeOTMrYfC6bNtA" name="MergeNode" outgoing="_IxZe4OtwEeOTMrYfC6bNtA _OYyVcOuBEeOTMrYfC6bNtA" incoming="_6OHy8OuAEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_NFOb0OuBEeOTMrYfC6bNtA" name="Configurar Fecha de Mant." outgoing="_HjussOuCEeOTMrYfC6bNtA" incoming="_1p4WQOuBEeOTMrYfC6bNtA" inPartition="_bP2j8OuAEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_VeFkMOuBEeOTMrYfC6bNtA" name="MergeNode" outgoing="_aFDvUOuBEeOTMrYfC6bNtA" incoming="_OYyVcOuBEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_oBnJwOuBEeOTMrYfC6bNtA" name="MergeNode" outgoing="_uR6DIOuBEeOTMrYfC6bNtA" incoming="_aFDvUOuBEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_tYH7cOuBEeOTMrYfC6bNtA" name="MergeNode" outgoing="_1p4WQOuBEeOTMrYfC6bNtA _aIBR0OuDEeOTMrYfC6bNtA" incoming="_uR6DIOuBEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_EakjYOuCEeOTMrYfC6bNtA" name="Configurar Duración de Mant." outgoing="_L5nH0OuCEeOTMrYfC6bNtA" incoming="_HjussOuCEeOTMrYfC6bNtA" inPartition="_bP2j8OuAEeOTMrYfC6bNtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_V0F-gOuDEeOTMrYfC6bNtA" name="Se Agrega este Viaje como Razon del Mant." outgoing="_gtHWgOuDEeOTMrYfC6bNtA" incoming="_aIBR0OuDEeOTMrYfC6bNtA" inPartition="_bP2j8OuAEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_X0Yr0OtCEeOe0LGLCewZTQ" name="hola" source="_BtUHAOtCEeOe0LGLCewZTQ" target="_Rtnh4OtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_X02wcOtDEeOe0LGLCewZTQ" source="_AgpfkOtCEeOe0LGLCewZTQ" target="_EHz-EOtDEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y_rk0OtDEeOe0LGLCewZTQ" name="Calculo Indica Sobrecarga" source="_EHz-EOtDEeOe0LGLCewZTQ" target="_IH7kkOtDEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_aP4BYOtDEeOe0LGLCewZTQ" name="Calculo Indica OK" source="_EHz-EOtDEeOe0LGLCewZTQ" target="_BtUHAOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oCXg4OtDEeOe0LGLCewZTQ" source="_IH7kkOtDEeOe0LGLCewZTQ" target="_BtUHAOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-1prcOtDEeOe0LGLCewZTQ" source="_IH7kkOtDEeOe0LGLCewZTQ" target="_18LwYOtDEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JdzV4OtEEeOe0LGLCewZTQ" name="SI - Usuario Confirma" source="_Rtnh4OtCEeOe0LGLCewZTQ" target="_dh9q8OtIEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_l5y1YOtEEeOe0LGLCewZTQ" source="_18LwYOtDEeOe0LGLCewZTQ" target="_k8pQoOtEEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ubAMAOtFEeOe0LGLCewZTQ" name="SI - Usuario Confirma con Sobrecarga" source="_k8pQoOtEEeOe0LGLCewZTQ" target="_dh9q8OtIEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FgTToOtGEeOe0LGLCewZTQ" name="NO - Usuario Rechaza" source="_k8pQoOtEEeOe0LGLCewZTQ" target="_q9C-wOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IxBdgOtGEeOe0LGLCewZTQ" name="NO - Usuario Rechaza" source="_Rtnh4OtCEeOe0LGLCewZTQ" target="_q9C-wOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XHWp4OtGEeOe0LGLCewZTQ" source="_q9C-wOtCEeOe0LGLCewZTQ" target="_WA7NUOtGEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Y35acOtGEeOe0LGLCewZTQ" name="SI" source="_WA7NUOtGEeOe0LGLCewZTQ" target="_AgpfkOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_khsIEOtGEeOe0LGLCewZTQ" name="NO" source="_WA7NUOtGEeOe0LGLCewZTQ" target="_fWICIOtGEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WaWtEOteEeOe0LGLCewZTQ" source="_fWICIOtGEeOe0LGLCewZTQ" target="_IyAwsOqxEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SnplkOtgEeOe0LGLCewZTQ" name="Hay Sobrecargas?" source="_dh9q8OtIEeOe0LGLCewZTQ" target="_sXKQsOtgEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_T5tqYOtgEeOe0LGLCewZTQ" name="NO-Usuario Rechaza esas Sobrecargas" source="_PvMxwOtgEeOe0LGLCewZTQ" target="_q9C-wOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Bn-i8OthEeOe0LGLCewZTQ" name="NO" source="_sXKQsOtgEeOe0LGLCewZTQ" target="_F_-nUOtIEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Gzry0OthEeOe0LGLCewZTQ" name="SI-Continuar?" source="_sXKQsOtgEeOe0LGLCewZTQ" target="_PvMxwOtgEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_msGV4OthEeOe0LGLCewZTQ" name="SI" source="_PvMxwOtgEeOe0LGLCewZTQ" target="_eArd4OthEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vClfsOthEeOe0LGLCewZTQ" source="_eArd4OthEeOe0LGLCewZTQ" target="_F_-nUOtIEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IC8l0OtiEeOe0LGLCewZTQ" source="_5luMsOqwEeOe0LGLCewZTQ" target="_6EhBgOqwEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IjJv4OtiEeOe0LGLCewZTQ" source="_6EhBgOqwEeOe0LGLCewZTQ" target="_HJmBYOqxEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JLKyIOtiEeOe0LGLCewZTQ" source="_HJmBYOqxEeOe0LGLCewZTQ" target="_IyAwsOqxEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JukaIOtiEeOe0LGLCewZTQ" source="_IyAwsOqxEeOe0LGLCewZTQ" target="_7_fD8OqxEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KPwboOtiEeOe0LGLCewZTQ" source="_7_fD8OqxEeOe0LGLCewZTQ" target="_UEii8OqzEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KumTwOtiEeOe0LGLCewZTQ" source="_UEii8OqzEeOe0LGLCewZTQ" target="_eH4QIOqzEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LJccsOtiEeOe0LGLCewZTQ" source="_eH4QIOqzEeOe0LGLCewZTQ" target="_8tzgQOtmEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jOme0OtiEeOe0LGLCewZTQ" source="_F_-nUOtIEeOe0LGLCewZTQ" target="_FqQ6MOtBEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_TagCAOtkEeOe0LGLCewZTQ" source="_FqQ6MOtBEeOe0LGLCewZTQ" target="_wRAlMOtiEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UrskIOtkEeOe0LGLCewZTQ" source="_v6efEOtjEeOe0LGLCewZTQ" target="_Jt_1YOtBEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VZBkMOtkEeOe0LGLCewZTQ" source="_Jt_1YOtBEeOe0LGLCewZTQ" target="_MhLusOtBEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_G7tUIOtmEeOe0LGLCewZTQ" source="_kfMXgOqzEeOe0LGLCewZTQ" target="_AgpfkOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_DJ72MOtnEeOe0LGLCewZTQ" source="_8tzgQOtmEeOe0LGLCewZTQ" target="_7NgkcOthEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YqHV8OtuEeOTMrYfC6bNtA" source="_MhLusOtBEeOe0LGLCewZTQ" target="_WG3PgOtBEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-HJisOtvEeOTMrYfC6bNtA" source="_WG3PgOtBEeOe0LGLCewZTQ" target="_1fYboOtvEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IxZe4OtwEeOTMrYfC6bNtA" name="NO-Continuar" source="_ziS0IOuAEeOTMrYfC6bNtA" target="_Ay_TUOtvEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MjvIEOtwEeOTMrYfC6bNtA" source="_Ay_TUOtvEeOTMrYfC6bNtA" target="_DEv6kOtvEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IirmEOtzEeOTMrYfC6bNtA" source="_wRAlMOtiEeOe0LGLCewZTQ" target="_-XTXMOtyEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_J2IyAOtzEeOTMrYfC6bNtA" source="_-XTXMOtyEeOTMrYfC6bNtA" target="_v6efEOtjEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_sRUz0OtzEeOTMrYfC6bNtA" name="Fecha de Partida es Menor al Necesario?" source="_DEv6kOtvEeOTMrYfC6bNtA" target="_rYHT4OtzEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_y7RG0Ot0EeOTMrYfC6bNtA" name="SI-Reconfigurar Fecha" source="_rYHT4OtzEeOTMrYfC6bNtA" target="_MhLusOtBEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BBvSQOt1EeOTMrYfC6bNtA" name="NO-Continuar" source="_rYHT4OtzEeOTMrYfC6bNtA" target="_EYXekOtvEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lSAmYOt1EeOTMrYfC6bNtA" source="_qnM-4Ot0EeOTMrYfC6bNtA" target="_jkIvUOt1EeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rkBXAOt1EeOTMrYfC6bNtA" name="NO-Modificar" source="_jkIvUOt1EeOTMrYfC6bNtA" target="_q9C-wOtCEeOe0LGLCewZTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_9i5XYOt1EeOTMrYfC6bNtA" source="_EYXekOtvEeOTMrYfC6bNtA" target="_qnM-4Ot0EeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CNDZYOt2EeOTMrYfC6bNtA" name="SI-Continuar" source="_jkIvUOt1EeOTMrYfC6bNtA" target="_5PDAwOtuEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6OHy8OuAEeOTMrYfC6bNtA" name="La Carta de Instrucción especifica Restricciones?" source="_1fYboOtvEeOTMrYfC6bNtA" target="_ziS0IOuAEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OYyVcOuBEeOTMrYfC6bNtA" name="SI-Configurar" source="_ziS0IOuAEeOTMrYfC6bNtA" target="_VeFkMOuBEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_aFDvUOuBEeOTMrYfC6bNtA" name="Mant. Preventivo" source="_VeFkMOuBEeOTMrYfC6bNtA" target="_oBnJwOuBEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uR6DIOuBEeOTMrYfC6bNtA" name="Ya existe un Mant. Del Mismo Tipo?" source="_oBnJwOuBEeOTMrYfC6bNtA" target="_tYH7cOuBEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1p4WQOuBEeOTMrYfC6bNtA" name="NO-Configurarlo" source="_tYH7cOuBEeOTMrYfC6bNtA" target="_NFOb0OuBEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_HjussOuCEeOTMrYfC6bNtA" source="_NFOb0OuBEeOTMrYfC6bNtA" target="_EakjYOuCEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_L5nH0OuCEeOTMrYfC6bNtA" source="_EakjYOuCEeOTMrYfC6bNtA" target="_Ay_TUOtvEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_aIBR0OuDEeOTMrYfC6bNtA" name="SI-Registrar" source="_tYH7cOuBEeOTMrYfC6bNtA" target="_V0F-gOuDEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_gtHWgOuDEeOTMrYfC6bNtA" source="_V0F-gOuDEeOTMrYfC6bNtA" target="_Ay_TUOtvEeOTMrYfC6bNtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_InCR4OuEEeOTMrYfC6bNtA" source="_7NgkcOthEeOe0LGLCewZTQ" target="_kfMXgOqzEeOe0LGLCewZTQ"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_BID6UOtBEeOe0LGLCewZTQ" name="Configurar Viaje de Carga" node="_FqQ6MOtBEeOe0LGLCewZTQ _Jt_1YOtBEeOe0LGLCewZTQ _MhLusOtBEeOe0LGLCewZTQ _WG3PgOtBEeOe0LGLCewZTQ _wRAlMOtiEeOe0LGLCewZTQ _v6efEOtjEeOe0LGLCewZTQ _1fYboOtvEeOTMrYfC6bNtA _-XTXMOtyEeOTMrYfC6bNtA"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_6rqCIOtBEeOe0LGLCewZTQ" name="Validación de Espacio y Capacidad" node="_AgpfkOtCEeOe0LGLCewZTQ _BtUHAOtCEeOe0LGLCewZTQ _q9C-wOtCEeOe0LGLCewZTQ _IH7kkOtDEeOe0LGLCewZTQ _18LwYOtDEeOe0LGLCewZTQ _fWICIOtGEeOe0LGLCewZTQ _F_-nUOtIEeOe0LGLCewZTQ _dh9q8OtIEeOe0LGLCewZTQ _eArd4OthEeOe0LGLCewZTQ"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_fzDZQOtHEeOe0LGLCewZTQ" name="Reconfiguración de Tiempos de la Ruta Semidedicada" node="_5PDAwOtuEeOTMrYfC6bNtA _Ay_TUOtvEeOTMrYfC6bNtA _DEv6kOtvEeOTMrYfC6bNtA _EYXekOtvEeOTMrYfC6bNtA _qnM-4Ot0EeOTMrYfC6bNtA"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_wi8-4OtkEeOe0LGLCewZTQ" name="Configurar Viaje de Entrega" node="_g1JuoOt3EeOTMrYfC6bNtA"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_PkAigOttEeOTMrYfC6bNtA" name="Configurar Viaje de Punto de Carga a Siguiente Segmento de Ruta Semidedicada"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_odLvoOt6EeOTMrYfC6bNtA" name="Configurar Viaje de Regreso"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_bP2j8OuAEeOTMrYfC6bNtA" name="Restricciones (Mant. Preventivo, etc)" node="_NFOb0OuBEeOTMrYfC6bNtA _EakjYOuCEeOTMrYfC6bNtA _V0F-gOuDEeOTMrYfC6bNtA"/>
+  </packagedElement>
+</uml:Package>

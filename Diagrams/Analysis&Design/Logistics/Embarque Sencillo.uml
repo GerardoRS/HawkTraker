@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_fxoAsOqpEeOe0LGLCewZTQ">
+  <elementImport xmi:id="_fytl0OqpEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_fytl0eqpEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_fytl0uqpEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_fytl0-qpEeOe0LGLCewZTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_hSwcQOqpEeOe0LGLCewZTQ" name="Logistica Embarque Sencillo">
+    <node xmi:type="uml:InitialNode" xmi:id="_o5aroOqpEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_pZO0IOqpEeOe0LGLCewZTQ" name="Upload de Carta de Instrucción"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_3_GRUOqpEeOe0LGLCewZTQ" name="Configurar Logistica"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BGHDsOqrEeOe0LGLCewZTQ" name="Configurar Viaje de Carga"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_DDhgsOqtEeOe0LGLCewZTQ" name="Configurar Viaje de Embarque"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UbAw8OqtEeOe0LGLCewZTQ" name="Configurar Descarga" outgoing="_cftAIOqtEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_V0fsYOqtEeOe0LGLCewZTQ" name="Configurar Viaje de Regreso" incoming="_cftAIOqtEeOe0LGLCewZTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_u3yxwOqtEeOe0LGLCewZTQ" name="Configurar Fecha y Tiempo para llegar al Punto de Carga"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_t-adQOquEeOe0LGLCewZTQ" name="Configurar Tiempo de Carga"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_2L4N8OquEeOe0LGLCewZTQ" name="Calcular:Tiempo desde la salida del Operador hasta Salida a Trayecto, Distancia recorrida desde salida del Operador hasta Salida al Trayecto, etc"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_K88zsOqwEeOe0LGLCewZTQ" name="Configurar Ruta hacia Punto de Carga"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_VlmNYOqwEeOe0LGLCewZTQ" name="Identificar Puntos de Riesgo en la Ruta"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_cftAIOqtEeOe0LGLCewZTQ" source="_UbAw8OqtEeOe0LGLCewZTQ" target="_V0fsYOqtEeOe0LGLCewZTQ"/>
+  </packagedElement>
+</uml:Package>
